@@ -29,6 +29,12 @@ gdjs.NameCode.GDplayObjects1= [];
 gdjs.NameCode.GDplayObjects2= [];
 gdjs.NameCode.GDNameObjects1= [];
 gdjs.NameCode.GDNameObjects2= [];
+gdjs.NameCode.GDTCCObjects1= [];
+gdjs.NameCode.GDTCCObjects2= [];
+gdjs.NameCode.GDEDUCObjects1= [];
+gdjs.NameCode.GDEDUCObjects2= [];
+gdjs.NameCode.GDaceObjects1= [];
+gdjs.NameCode.GDaceObjects2= [];
 
 
 gdjs.NameCode.eventsList0 = function(runtimeScene) {
@@ -130,6 +136,12 @@ gdjs.NameCode.GDplayObjects1.length = 0;
 gdjs.NameCode.GDplayObjects2.length = 0;
 gdjs.NameCode.GDNameObjects1.length = 0;
 gdjs.NameCode.GDNameObjects2.length = 0;
+gdjs.NameCode.GDTCCObjects1.length = 0;
+gdjs.NameCode.GDTCCObjects2.length = 0;
+gdjs.NameCode.GDEDUCObjects1.length = 0;
+gdjs.NameCode.GDEDUCObjects2.length = 0;
+gdjs.NameCode.GDaceObjects1.length = 0;
+gdjs.NameCode.GDaceObjects2.length = 0;
 
 gdjs.NameCode.eventsList0(runtimeScene);
 

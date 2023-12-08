@@ -81,6 +81,22 @@ gdjs.GameplayCode.eventsList2 = function(runtimeScene) {
 
 {
 
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9470540);
+}
+if (isConditionTrue_0) {
+{gdjs.deviceVibration.startVibration(50);
+}}
+
+}
+
+
+};gdjs.GameplayCode.eventsList3 = function(runtimeScene) {
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("right_arrow"), gdjs.GameplayCode.GDright_9595arrowObjects1);
 
 let isConditionTrue_0 = false;
@@ -97,14 +113,32 @@ gdjs.copyArray(runtimeScene.getObjects("Skelet"), gdjs.GameplayCode.GDSkeletObje
 }{for(var i = 0, len = gdjs.GameplayCode.GDSkeletObjects1.length ;i < len;++i) {
     gdjs.GameplayCode.GDSkeletObjects1[i].getBehavior("Flippable").flipX(false);
 }
-}{gdjs.deviceVibration.startVibration(100);
-}}
+}
+{ //Subevents
+gdjs.GameplayCode.eventsList2(runtimeScene);} //End of subevents
+}
 
 }
 
 
 };gdjs.GameplayCode.mapOfGDgdjs_9546GameplayCode_9546GDLeft_95959595arrowObjects1Objects = Hashtable.newFrom({"Left_arrow": gdjs.GameplayCode.GDLeft_9595arrowObjects1});
-gdjs.GameplayCode.eventsList3 = function(runtimeScene) {
+gdjs.GameplayCode.eventsList4 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9407268);
+}
+if (isConditionTrue_0) {
+{gdjs.deviceVibration.startVibration(50);
+}}
+
+}
+
+
+};gdjs.GameplayCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -124,13 +158,15 @@ gdjs.copyArray(runtimeScene.getObjects("Skelet"), gdjs.GameplayCode.GDSkeletObje
 }{for(var i = 0, len = gdjs.GameplayCode.GDSkeletObjects1.length ;i < len;++i) {
     gdjs.GameplayCode.GDSkeletObjects1[i].getBehavior("Flippable").flipX(true);
 }
-}{gdjs.deviceVibration.startVibration(100);
-}}
+}
+{ //Subevents
+gdjs.GameplayCode.eventsList4(runtimeScene);} //End of subevents
+}
 
 }
 
 
-};gdjs.GameplayCode.eventsList4 = function(runtimeScene) {
+};gdjs.GameplayCode.eventsList6 = function(runtimeScene) {
 
 {
 
@@ -293,7 +329,7 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.GameplayCode.eventsList2(runtimeScene);} //End of subevents
+gdjs.GameplayCode.eventsList3(runtimeScene);} //End of subevents
 }
 
 }
@@ -308,7 +344,7 @@ isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left
 if (isConditionTrue_0) {
 
 { //Subevents
-gdjs.GameplayCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.GameplayCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 }
@@ -348,7 +384,7 @@ gdjs.GameplayCode.GDtimer_9595icon2Objects2.length = 0;
 gdjs.GameplayCode.GDplayObjects1.length = 0;
 gdjs.GameplayCode.GDplayObjects2.length = 0;
 
-gdjs.GameplayCode.eventsList4(runtimeScene);
+gdjs.GameplayCode.eventsList6(runtimeScene);
 
 return;
 

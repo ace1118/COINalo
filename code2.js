@@ -37,6 +37,19 @@ gdjs.ScoreCode.eventsList0 = function(runtimeScene) {
 
 {
 
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "bg_music.mp3", false, 50, 1);
+}}
+
+}
+
+
+{
+
 gdjs.copyArray(runtimeScene.getObjects("play"), gdjs.ScoreCode.GDplayObjects1);
 
 let isConditionTrue_0 = false;

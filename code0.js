@@ -64,6 +64,19 @@ if (isConditionTrue_0) {
 
 
 let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "bg_music.mp3", false, 50, 1);
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("Coin"), gdjs.NameCode.GDCoinObjects1);
 gdjs.copyArray(runtimeScene.getObjects("Name"), gdjs.NameCode.GDNameObjects1);

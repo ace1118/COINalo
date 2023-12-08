@@ -175,7 +175,8 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "timer");
+{gdjs.evtTools.sound.playSound(runtimeScene, "bg_music.mp3", false, 50, 1);
+}{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "timer");
 }}
 
 }

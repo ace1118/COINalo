@@ -85,6 +85,16 @@ gdjs.copyArray(runtimeScene.getObjects("play"), gdjs.NameCode.GDplayObjects1);
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+{
+}
+
+}
+
+
 };
 
 gdjs.NameCode.func = function(runtimeScene) {

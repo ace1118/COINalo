@@ -54,6 +54,29 @@ for (var i = 0, k = 0, l = gdjs.NameCode.GDplayObjects1.length;i<l;++i) {
 }
 gdjs.NameCode.GDplayObjects1.length = k;
 if (isConditionTrue_0) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "LeaderBoard", false);
+}}
+
+}
+
+
+};gdjs.NameCode.eventsList1 = function(runtimeScene) {
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("play"), gdjs.NameCode.GDplayObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.NameCode.GDplayObjects1.length;i<l;++i) {
+    if ( gdjs.NameCode.GDplayObjects1[i].IsPressed((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.NameCode.GDplayObjects1[k] = gdjs.NameCode.GDplayObjects1[i];
+        ++k;
+    }
+}
+gdjs.NameCode.GDplayObjects1.length = k;
+if (isConditionTrue_0) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Gameplay", false);
 }}
 
@@ -106,9 +129,22 @@ gdjs.copyArray(runtimeScene.getObjects("play"), gdjs.NameCode.GDplayObjects1);
 
 {
 
+gdjs.copyArray(runtimeScene.getObjects("Name"), gdjs.NameCode.GDNameObjects1);
 
 let isConditionTrue_0 = false;
-{
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.NameCode.GDNameObjects1.length;i<l;++i) {
+    if ( gdjs.NameCode.GDNameObjects1[i].getBehavior("Text").getText() == "admin" ) {
+        isConditionTrue_0 = true;
+        gdjs.NameCode.GDNameObjects1[k] = gdjs.NameCode.GDNameObjects1[i];
+        ++k;
+    }
+}
+gdjs.NameCode.GDNameObjects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.NameCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 }
@@ -156,7 +192,7 @@ gdjs.NameCode.GDEDUCObjects2.length = 0;
 gdjs.NameCode.GDaceObjects1.length = 0;
 gdjs.NameCode.GDaceObjects2.length = 0;
 
-gdjs.NameCode.eventsList0(runtimeScene);
+gdjs.NameCode.eventsList1(runtimeScene);
 
 return;
 
